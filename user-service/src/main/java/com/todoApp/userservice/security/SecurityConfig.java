@@ -49,6 +49,8 @@ public class SecurityConfig   {
         return http.build();
     }
 
+
+
     @Bean
     public UserDetailsManager authenticateUsers(){
         String userQuery = "SELECT username, password FROM users WHERE username=?";
